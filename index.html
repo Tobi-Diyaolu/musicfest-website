@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicFest 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Optional: JS for hero fade-in animation -->
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <!-- Header with festival name and navigation -->
@@ -24,42 +27,79 @@
         </div>
     </header>
 
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>MusicFest 2025</h1>
+            <p>Join us for an unforgettable weekend of live music, amazing artists, and festival vibes!</p>
+            <a href="tickets.html" class="btn">Book Tickets</a>
+        </div>
+    </section>
+
     <!-- Main content -->
     <main>
-        <!-- Hero section -->
-        <section class="hero">
-            <div class="hero-text">
-                <h2>Join Us on 5th-6th July 2025 at Central Park</h2>
-                <p>Two days of live music, food, and unforgettable memories.</p>
-                <a href="tickets.html" class="btn">Book Tickets Now</a>
-            </div>
-            <!-- Optional hero image/banner -->
-            <div class="hero-image">
-                <img src="images/festival-banner.jpg" alt="MusicFest 2025 Banner">
-            </div>
+        <!-- Festival Dates Section -->
+        <section class="festival-info">
+            <h2>Join Us on 5th-6th July 2025 at Central Park</h2>
+            <p>Two days of live music, food, and unforgettable memories.</p>
+            <a href="tickets.html" class="btn">Book Tickets Now</a>
         </section>
 
-        <!-- Featured Artists Preview -->
-        <section class="featured-artists">
-            <h2>Featured Artists</h2>
-            <div class="artists-grid">
-                <!-- Artist 1 -->
-                <article class="artist-card">
-                    <figure>
-                        <img src="images/artist1.jpg" alt="Artist 1">
-                        <figcaption>DJ Starbeat - Electronic</figcaption>
-                    </figure>
-                </article>
-                <!-- Artist 2 -->
-                <article class="artist-card">
-                    <figure>
-                        <img src="images/artist2.jpg" alt="Artist 2">
-                        <figcaption>The Rockers - Rock</figcaption>
-                    </figure>
-                </article>
-                <!-- Add at least 4 more artists similarly -->
-            </div>
-        </section>
+        <!-- Featured Artists Section -->
+<section class="featured-artists">
+    <h2>Featured Artists</h2>
+    <div class="artists-container">
+
+        <!-- Artist 1 -->
+        <article class="artist-card">
+            <figure>
+                <img src="images/artist1.jpeg" alt="Sade">
+                <figcaption>SADE - Soul Jazz</figcaption>
+            </figure>
+        </article>
+
+        <!-- Artist 2 -->
+        <article class="artist-card">
+            <figure>
+                <img src="images/artist2.jpeg" alt="Radiohead">
+                <figcaption>RADIOHEAD - Alt Rock</figcaption>
+            </figure>
+        </article>
+
+        <!-- Artist 3 -->
+        <article class="artist-card">
+            <figure>
+                <img src="images/artist3.jpeg" alt="Dave Brubeck">
+                <figcaption>DAVE BRUBECK - Jazz</figcaption>
+            </figure>
+        </article>
+
+        <!-- Artist 4 -->
+        <article class="artist-card">
+            <figure>
+                <img src="images/artist4.jpeg" alt="H.E.R">
+                <figcaption>H.E.R - RnB</figcaption>
+            </figure>
+        </article>
+
+        <!-- Artist 5 -->
+        <article class="artist-card">
+            <figure>
+                <img src="images/artist5.jpeg" alt="Tame Impala">
+                <figcaption>TAME IMPALA - Indie / Hip Hop</figcaption>
+            </figure>
+        </article>
+
+        <!-- Artist 6 -->
+        <article class="artist-card">
+            <figure>
+                <img src="images/artist6.jpeg" alt="Frank Ocean">
+                <figcaption>FRANK OCEAN - Alt RnB</figcaption>
+            </figure>
+        </article>
+
+    </div>
+</section>
 
         <!-- About Section -->
         <section class="about">
@@ -70,17 +110,20 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 MusicFest. All rights reserved.</p>
-            <p>Follow us on 
-                <a href="#">Instagram</a> | 
-                <a href="#">Facebook</a> | 
-                <a href="#">Twitter</a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- Link to external JavaScript -->
-    <script src="js/script.js"></script>
+    <div class="container">
+        <p>&copy; 2025 MusicFest. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link">
+                <i class="fab fa-instagram"></i> Instagram
+            </a> | 
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a> | 
+            <a href="https://www.twitter.com" target="_blank" rel="noopener" class="social-link">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+        </p>
+    </div>
+</footer>
 </body>
 </html>
