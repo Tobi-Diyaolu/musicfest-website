@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Schedule - MusicFest 2025</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* ----------------------------
+   Schedule Page Styles
+---------------------------- */
+.schedule-page {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.schedule-page h2 {
+    color: var(--primary);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.day-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.day-btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    color: var(--text-dark);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.day-btn.active {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+.schedule-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: var(--space-lg);
+}
+
+/* ----------------------------
+   Full-Image Artist Cards
+---------------------------- */
+.schedule-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 420px; /* larger card height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schedule-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2),
+                0 0 20px rgba(255,0,102,0.3),
+                0 0 25px rgba(55,66,250,0.2);
+}
+
+.schedule-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.schedule-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay Text */
+.schedule-card .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: var(--space-md);
+    background: linear-gradient(to top, rgba(255,0,102,0.85), rgba(255,0,102,0.3), rgba(255,0,102,0));
+    color: var(--text-light);
+}
+
+.schedule-card h3 {
+    margin: 0 0 5px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.schedule-card p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.schedule-card .stage-badge {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-light);
+    background-color: rgba(55,66,250,0.7);
+    border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .schedule-card {
+        height: 360px;
+    }
+}
+
+@media (max-width: 600px) {
+    .schedule-card {
+        height: 280px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="nav-left">
+            <h1>MusicFest 2025</h1>
+            <p class="tagline">Experience the ultimate music celebration!</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lineup.html">Lineup</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="schedule.html" class="active">Schedule</a></li>
+        </ul>
+    </div>
+</header>
+
+<main class="schedule-page">
+    <h2>Performance Schedule</h2>
+
+    <div class="day-buttons">
+        <button class="btn day-btn active" data-day="day1">Day 1</button>
+        <button class="btn day-btn" data-day="day2">Day 2</button>
+    </div>
+
+    <div class="schedule-container">
+
+        <!-- Day 1 -->
+        <div class="schedule-card day1">
+            <img src="images/artist1.jpeg" alt="Sade">
+            <div class="overlay">
+                <h3>Sade</h3>
+                <p>12:00 PM - 1:00 PM</p>
+                <span class="stage-badge">Main Stage</span>
+            </div>
+        </div>
+
+        <div class="schedule-card day1">
+            <img src="images/artist2.jpeg" alt="Radiohead">
+            <div class="overlay">
+                <h3>Radiohead</h3>
+                <p>1:30 PM - 2:30 PM</p>
+                <span class="stage-badge">Main Stage</span>
+            </div>
+        </div>
+
+        <div class="schedule-card day1">
+            <img src="images/artist3.jpeg" alt="Dave Brubeck">
+            <div class="overlay">
+                <h3>Dave Brubeck</h3>
+                <p>3:00 PM - 4:00 PM</p>
+                <span class="stage-badge">Jazz Tent</span>
+            </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="schedule-card day2" style="display:none;">
+            <img src="images/artist4.jpeg" alt="H.E.R">
+            <div class="overlay">
+                <h3>H.E.R</h3>
+                <p>12:00 PM - 1:00 PM</p>
+                <span class="stage-badge">Main Stage</span>
+            </div>
+        </div>
+
+        <div class="schedule-card day2" style="display:none;">
+            <img src="images/artist5.jpeg" alt="Tame Impala">
+            <div class="overlay">
+                <h3>Tame Impala</h3>
+                <p>1:30 PM - 2:30 PM</p>
+                <span class="stage-badge">Indie Stage</span>
+            </div>
+        </div>
+
+        <div class="schedule-card day2" style="display:none;">
+            <img src="images/artist6.jpeg" alt="Frank Ocean">
+            <div class="overlay">
+                <h3>Frank Ocean</h3>
+                <p>3:00 PM - 4:00 PM</p>
+                <span class="stage-badge">Main Stage</span>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 MusicFest. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link"><i class="fab fa-instagram"></i> Instagram</a> | 
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link"><i class="fab fa-facebook-f"></i> Facebook</a> | 
+            <a href="https://www.twitter.com" target="_blank" rel="noopener" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const dayButtons = document.querySelectorAll('.day-btn');
+    const scheduleCards = document.querySelectorAll('.schedule-card');
+
+    dayButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const selectedDay = button.getAttribute('data-day');
+
+            dayButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            scheduleCards.forEach(card => {
+                card.style.display = card.classList.contains(selectedDay) ? '' : 'none';
+            });
+        });
+    });
+});
+</script>
+
+</body>
+</html>

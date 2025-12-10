@@ -5,125 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicFest 2025</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Optional: JS for hero fade-in animation -->
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Header with festival name and navigation -->
-    <header>
-        <div class="container">
-            <h1>MusicFest 2025</h1>
-            <p>Experience the ultimate music celebration!</p>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="lineup.html">Lineup</a></li>
-                    <li><a href="tickets.html">Tickets</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-text">
+<header>
+    <div class="container nav-container">
+        <div class="nav-left">
             <h1>MusicFest 2025</h1>
-            <p>Join us for an unforgettable weekend of live music, amazing artists, and festival vibes!</p>
-            <a href="tickets.html" class="btn">Book Tickets</a>
+            <p class="tagline">Experience the ultimate music celebration!</p>
         </div>
-    </section>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="lineup.html">Lineup</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <!-- Main content -->
-    <main>
-        <!-- Festival Dates Section -->
-        <section class="festival-info">
-            <h2>Join Us on 5th-6th July 2025 at Central Park</h2>
-            <p>Two days of live music, food, and unforgettable memories.</p>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>MusicFest 2025</h1>
+        <p>Join us for an unforgettable weekend of live music, amazing artists, and festival vibes!</p>
+        <a href="tickets.html" class="btn">Book Tickets</a>
+    </div>
+</section>
+
+<main>
+
+    <!-- FESTIVAL OVERVIEW -->
+   <section class="festival-overview">
+    <div class="overview-container">
+        <h2 class="hover-title">Join Us on 5th-6th July 2025 at Central Park</h2>
+
+        <div class="hover-card">
+            <p>
+                MusicFest 2025 is a two-day celebration of live music, bringing together a diverse lineup of world-class performers. 
+                From jazz legends to contemporary indie, soulful R&B, and electronic beats, the festival offers an immersive musical 
+                experience for fans of all genres. Set in the heart of Central Park, attendees can enjoy both vibrant performances 
+                and scenic outdoor spaces designed for relaxation, socialising, and food experiences.
+            </p>
+            <p>
+                Festival-goers can expect electrifying performances across multiple stages, interactive workshops, art installations, 
+                and food stalls featuring cuisines from around the world. MusicFest aims to create a memorable cultural experience 
+                that goes beyond the music, celebrating creativity, community, and the joy of live performances.
+            </p>
             <a href="tickets.html" class="btn">Book Tickets Now</a>
-        </section>
+        </div>
+    </div>
 
-        <!-- Featured Artists Section -->
+    <!-- Main Book Tickets Button below overview -->
+    <div class="main-booking">
+        <a href="tickets.html" class="btn">Book Tickets Now</a>
+    </div>
+</section>
+
+   <!-- FEATURED ARTISTS (Full 2x3 display) -->
 <section class="featured-artists">
     <h2>Featured Artists</h2>
     <div class="artists-container">
 
-        <!-- Artist 1 -->
-        <article class="artist-card">
-            <figure>
-                <img src="images/artist1.jpeg" alt="Sade">
-                <figcaption>SADE - Soul Jazz</figcaption>
-            </figure>
-        </article>
+        <a href="lineup.html#sade" class="artist-link">
+            <article class="artist-card">
+                <figure>
+                    <img src="images/artist1.jpeg" alt="Sade">
+                    <figcaption>SADE - Soul Jazz</figcaption>
+                </figure>
+            </article>
+        </a>
 
-        <!-- Artist 2 -->
-        <article class="artist-card">
-            <figure>
-                <img src="images/artist2.jpeg" alt="Radiohead">
-                <figcaption>RADIOHEAD - Alt Rock</figcaption>
-            </figure>
-        </article>
+        <a href="lineup.html#radiohead" class="artist-link">
+            <article class="artist-card">
+                <figure>
+                    <img src="images/artist2.jpeg" alt="Radiohead">
+                    <figcaption>RADIOHEAD - Alt Rock</figcaption>
+                </figure>
+            </article>
+        </a>
 
-        <!-- Artist 3 -->
-        <article class="artist-card">
-            <figure>
-                <img src="images/artist3.jpeg" alt="Dave Brubeck">
-                <figcaption>DAVE BRUBECK - Jazz</figcaption>
-            </figure>
-        </article>
+        <a href="lineup.html#davebrubeck" class="artist-link">
+            <article class="artist-card">
+                <figure>
+                    <img src="images/artist3.jpeg" alt="Dave Brubeck">
+                    <figcaption>DAVE BRUBECK - Jazz</figcaption>
+                </figure>
+            </article>
+        </a>
 
-        <!-- Artist 4 -->
-        <article class="artist-card">
-            <figure>
-                <img src="images/artist4.jpeg" alt="H.E.R">
-                <figcaption>H.E.R - RnB</figcaption>
-            </figure>
-        </article>
+        <a href="lineup.html#her" class="artist-link">
+            <article class="artist-card">
+                <figure>
+                    <img src="images/artist4.jpeg" alt="H.E.R">
+                    <figcaption>H.E.R - RnB</figcaption>
+                </figure>
+            </article>
+        </a>
 
-        <!-- Artist 5 -->
-        <article class="artist-card">
-            <figure>
-                <img src="images/artist5.jpeg" alt="Tame Impala">
-                <figcaption>TAME IMPALA - Indie / Hip Hop</figcaption>
-            </figure>
-        </article>
+        <a href="lineup.html#tameimpala" class="artist-link">
+            <article class="artist-card">
+                <figure>
+                    <img src="images/artist5.jpeg" alt="Tame Impala">
+                    <figcaption>TAME IMPALA - Indie / Hip Hop</figcaption>
+                </figure>
+            </article>
+        </a>
 
-        <!-- Artist 6 -->
-        <article class="artist-card">
-            <figure>
-                <img src="images/artist6.jpeg" alt="Frank Ocean">
-                <figcaption>FRANK OCEAN - Alt RnB</figcaption>
-            </figure>
-        </article>
+        <a href="lineup.html#frankocean" class="artist-link">
+            <article class="artist-card">
+                <figure>
+                    <img src="images/artist6.jpeg" alt="Frank Ocean">
+                    <figcaption>FRANK OCEAN - Alt RnB</figcaption>
+                </figure>
+            </article>
+        </a>
 
     </div>
 </section>
 
-        <!-- About Section -->
-        <section class="about">
-            <h2>About MusicFest</h2>
-            <p>MusicFest 2025 brings together top performers across genres for a two-day celebration of music, arts, and culture. From electronic beats to live rock bands, there’s something for every music lover.</p>
-        </section>
-    </main>
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About MusicFest</h2>
+        <p>MusicFest 2025 brings together top performers across genres for a two-day celebration of music, arts, and culture. From electronic beats to live rock bands, there’s something for every music lover.</p>
+    </section>
 
-    <!-- Footer -->
-    <footer>
+</main>
+
+<footer>
     <div class="container">
         <p>&copy; 2025 MusicFest. All rights reserved.</p>
         <p>Follow us on 
-            <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link">
-                <i class="fab fa-instagram"></i> Instagram
-            </a> | 
-            <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link">
-                <i class="fab fa-facebook-f"></i> Facebook
-            </a> | 
-            <a href="https://www.twitter.com" target="_blank" rel="noopener" class="social-link">
-                <i class="fab fa-twitter"></i> Twitter
-            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link"><i class="fab fa-instagram"></i> Instagram</a> | 
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link"><i class="fab fa-facebook-f"></i> Facebook</a> | 
+            <a href="https://www.twitter.com" target="_blank" rel="noopener" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
         </p>
     </div>
 </footer>
+
 </body>
 </html>
